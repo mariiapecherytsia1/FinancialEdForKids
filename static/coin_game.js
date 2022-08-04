@@ -5,7 +5,7 @@ function create_coin_notes() {
     let coins_html = "";
     let notes_html = "";
 
-    for (const coin of ["0001", "0005", "0010", "0020", "0050", "0100", "0200"]) {
+    for (const coin of ["0001", "0005", "0010", "0025", "0050", "0100", "0200"]) {
         coins_html += '<img src="static/' + coin + '.jpg" onclick="javascript:add_coin(\'' +
             coin + '\')" width="80px" height="80px">';
 
@@ -47,7 +47,7 @@ function reset_coins(reset_target=true){
         console.log("Min es " + String(min));
         console.log("Max es " + String(max));
         random_number = Math.max(Math.random() * (max - min) + min, min);
-        document.getElementById("target_coins").value = Number(random_number).toFixed(2) + "€";
+        document.getElementById("target_coins").value = Number(random_number).toFixed(2) + "$";
     }
     refresh_plot();
 }
@@ -58,8 +58,8 @@ function check_coins(){
         sum += parseInt(coin) / 100;
     });
     target_value = document.getElementById("target_coins").value;
-    console.log("La suma es " + String(sum) + "€ y el objetivo era: " + String(target_value));
-    if (target_value == Number(sum).toFixed(2) + "€") {
+    console.log("La suma es " + String(sum) + "$ y el objetivo era: " + String(target_value));
+    if (target_value == Number(sum).toFixed(2) + "$") {
         var myModal = new bootstrap.Modal(document.getElementById('modal_ok'))
         myModal.show();
         reset_coins();
