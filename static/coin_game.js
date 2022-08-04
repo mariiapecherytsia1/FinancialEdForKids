@@ -5,7 +5,7 @@ function create_coin_notes() {
     let coins_html = "";
     let notes_html = "";
 
-    for (const coin of ["0001", "0005", "0010", "0020", "0050", "0100", "0200"]) {
+    for (const coin of ["0001", "0005", "0010", "0025", "0050", "0100", "0200"]) {
         coins_html += '<img src="static/' + coin + '.jpg" onclick="javascript:add_coin(\'' +
             coin + '\')" width="80px" height="80px">';
 
