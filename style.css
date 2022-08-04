@@ -12,13 +12,16 @@
 body{
     /* site background */
     /* background-color: #aaebd5;  */
-    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    /* background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); */
+    background-image: url("./images_folder/raining-money-8.gif");
+    background-repeat: repeat;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 .header_wrapper{
-    background: #6f6868;
+    background-image: linear-gradient(to right, white, grey, white, grey
+    );;
     color: white;
     display: flex;
     justify-content: center;
