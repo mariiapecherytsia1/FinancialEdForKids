@@ -3,21 +3,23 @@
 
 *{
     box-sizing: border-box;
-    color: #3d3d3d;
-    font-family: 'Inter', sans-serif;
+    color: hsl(0, 0%, 0%);
+    font-family: Chalkduster, 'fantasy';
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
 body{
     /* site background */
-    background-color: #aaebd5; 
+    /* background-color: #aaebd5;  */
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 .header_wrapper{
-    background: #f7f7f7;
+    background: #6f6868;
+    color: white;
     display: flex;
     justify-content: center;
     width: 100%;
