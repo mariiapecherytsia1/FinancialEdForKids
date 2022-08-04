@@ -5,13 +5,13 @@ function create_coin_notes() {
     let coins_html = "";
     let notes_html = "";
 
-    for (const coin of ["0001", "0005", "0010", "0025", "0050", "0100"]) {
+    for (const coin of ["0001", "0005", "0010", "0025", "0050"]) {
         coins_html += '<img src="static/' + coin + '.jpg" onclick="javascript:add_coin(\'' +
             coin + '\')" width="80px" height="80px">';
 
         document.getElementById("coins").innerHTML = coins_html;
     }
-    for (const note of ["0200", "0500", "1000", "2000", "5000", "10000", "50000"]) {
+    for (const note of ["0100", "0200", "0500", "1000", "2000", "5000", "10000", "50000"]) {
         notes_html += '<img src="static/' + note + '.jpg" onclick="javascript:add_coin(\'' +
             note + '\')" width="160px" height="' + Math.round(160*(62/120)) + 'px">';
         document.getElementById("notes").innerHTML = notes_html;
