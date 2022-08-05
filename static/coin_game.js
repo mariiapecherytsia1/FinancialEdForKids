@@ -47,7 +47,7 @@ function reset_coins(reset_target=true){
         console.log("Min es " + String(min));
         console.log("Max es " + String(max));
         random_number = Math.max(Math.random() * (max - min) + min, min);
-        document.getElementById("target_coins").value = Number(random_number).toFixed(2) + "$";
+        document.getElementById("target_coins").value = "$" + Number(random_number).toFixed(2) ;
     }
     refresh_plot();
 }
