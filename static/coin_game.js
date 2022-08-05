@@ -59,7 +59,7 @@ function check_coins(){
     });
     target_value = document.getElementById("target_coins").value;
     console.log("La suma es " + String(sum) + "$ y el objetivo era: " + String(target_value));
-    if (target_value == Number(sum).toFixed(2) + "$") {
+    if (target_value == "$" + Number(sum).toFixed(2)) {
         var myModal = new bootstrap.Modal(document.getElementById('modal_ok'))
         myModal.show();
         reset_coins();
