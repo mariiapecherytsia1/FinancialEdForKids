@@ -43,9 +43,24 @@
 <!--  Style needed for ios to prevent pitch zoom. Thanks to https://stackoverflow.com/a/62165035 -->
  <!-- Header end -->
  <div class="container_wrapper">
+<!--     //adding back button-->
+      <a href= "https://mariiapecherytsia1.github.io/FinancialEdForKids/" >
+        <img src= "https://icon-library.com/images/return-button-icon/return-button-icon-17.jpg" style="align:top; width:35; height:35px; border:none;" >
+        </a>
+     <button type="button" class="collapsible">Instructions</button>
+                <div class="content">
+                 <br> <!-- this adds space before and after text in collapisble-->
+                    <p> How to play: <br>
+                        Correctly add the currency up as it is shown in the left hand pane and gain 10 pts for every correct answer.
+                        Use your points to <a href="https://mariiapecherytsia1.github.io/FinancialEdForKids/shop.html"> shop in the store</a>
+                        or save up for even more grander items. #SaveForFred
+                    </p>
+                    <br>
+                    </div>
     <div class="container_inner">
 <body style="touch-action: pan-x pan-y;">
 <div class="container-fluid">
+
     <h1>Coin game</h1>
     <div class="row">
         <div class="bg-light" id="coin_canvas" style="min-height:100px;width:100%;">
@@ -174,6 +189,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 </script>
 <script src="money.js"></script>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+    </script>
+
 
 </body>
 </html>
