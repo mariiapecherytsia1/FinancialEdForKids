@@ -133,7 +133,7 @@ hr{
     text-transform: uppercase;
 }
 .about__photo{
-    max-width: 500px;
+    max-width: 1000px;
     width: 100%;
 }
 .container_about{

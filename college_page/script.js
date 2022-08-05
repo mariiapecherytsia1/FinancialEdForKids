@@ -40,7 +40,12 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
 
 //FACT GENERATOR, TODO add more facts
 var factList = [
-  "Over 40% of adults are not financially literate!"
+  "Over 40% of adults are not financially literate!",
+  "An estimated 58% of teenagers plan to work part-time during college",
+  "Half of teenagers work outside the home each month",
+  "Teenagers earn an average of $465 per month",
+  "More than half of teenagers already have savings to show for it",
+
 ];
 
 

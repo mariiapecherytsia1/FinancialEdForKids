@@ -77,7 +77,7 @@ h2{
   font-size: 150px;
   padding:150px;
   text-shadow: 0 0 5px white;
-  background-image: url("https://www.socialsciencespace.com/wp-content/uploads/Colorism-graphic.png");
+  background-image: url("");
   background-repeat: no-repeat, repeat;
   /*background-size: 105%;*/
 }
@@ -202,9 +202,10 @@ h2{
 
   font-family:  'Fjalla One', sans-serif;
   font-size: 2em;
+  font-style: italic;
   text-align: center;
   line-height: 1.2em;
-  color: #2B6648; 
+  color: #2B6648;
 }
 
 #myButton
