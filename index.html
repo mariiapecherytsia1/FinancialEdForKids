@@ -13,6 +13,50 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="./images_folder/logo.jpg">
     <link rel="stylesheet" href="./style.css">
+    <style>
+        .tooltip {
+          position: relative;
+          display: inline-block;
+          
+        }
+        
+        .tooltip .tooltiptext {
+          visibility: hidden;
+          width: 150px;
+          background-color: grey;
+          color: #fff;
+          text-align: center;
+          font-size: 14px;
+          font-family: monospace;
+          line-height: normal;
+          text-transform: none;
+          border-radius: 6px;
+          padding: 5px 0;
+
+        
+          /* Position the tooltip */
+          position: absolute;
+          z-index: 1;
+          top: -5px;
+         left: 105%;
+        }
+        
+        .tooltip:hover .tooltiptext {
+          visibility: visible;
+        }
+
+        .tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent grey transparent transparent;
+}
+        </style>
+        
     
 
 </head>
@@ -43,15 +87,39 @@
         <img class="home__mainImg"  src="./images_folder/kids_money.png" alt="Alyanna picture">
         <div class="container_inner">
             <ul class="home__menu">
-                <li><a href="./about.html">Meet the team</a></li>
+                <li><a href="./about.html"><div class="tooltip">Meet the Team
+                    <span class="tooltiptext">Meet the creators behind the app!</span>
+                  </div></a></li>
                 <hr style="margin: 10px 0;">
-                <!-- your resume -->
-                <li><a href="./euro_coin_game.html">play game</a></li>
-                <li><a href="./Financialdoc.html">Financial Literacy</a></li>
-                <li><a href="./shop.html">Shop</a></li>
-                <!-- <li><a href="./portfolio.html">portfolio</a></li> -->
-                <!-- <li><a href="./coursework.html">coursework</a></li> -->
-                <!-- <li><a href="./blog.html">blog</a></li> -->
+
+                <li><a href="./euro_coin_game.html"><div class="tooltip">Play game
+                    <span class="tooltiptext">Learn the basics of spending and saving in our currency game
+                    </span>
+                  </div></a></li>
+
+
+                <li><a href="./shop.html"><div class="tooltip">Shop
+                    <span class="tooltiptext">Spend the money you earn in our virtual store! 
+                    </span>
+                  </div></a></li>
+
+                 
+                  <li><a href="./college_page/index.html"><div class="tooltip">Teens
+                    <span class="tooltiptext">Preparing for college is tough, find some
+                         tips and tricks on how to navigate it here!
+                    </span>
+                  </div></a></li>
+                  
+
+                <li><a href="./Financialdoc.html"><div class="tooltip">Financial Literacy
+                    <span class="tooltiptext">Learn more about FinED in our extensive library of articles.
+                    </span>
+                  </div></a></li>
+
+                
+
+                
+                
             </ul>
             <hr>
 
